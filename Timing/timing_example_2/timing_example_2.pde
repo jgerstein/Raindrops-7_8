@@ -7,11 +7,13 @@ int currentTime = 0;
 int timeChange = 0;
 
 void setup() {
+  background(255);
   size(500, 500);
   noStroke();
 }
 
 void draw() {
+  println("currentTime: " + currentTime + "\noldTime: " + oldTime + "\ndifference: " + timeChange);
   ellipse(mouseX, mouseY, 30, 30);  //Draw a circle every frame
   currentTime = millis();           //Update currentTime with the current value of millis()
   timeChange = currentTime - oldTime;  //set timeChange to the difference between currentTime and oldTime
