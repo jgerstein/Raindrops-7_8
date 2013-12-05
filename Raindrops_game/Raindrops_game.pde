@@ -1,9 +1,12 @@
-Raindrop[] r = new Raindrop[10];
+int index = 1;
+int oldTime = 0;
+int threshold = 3000;
+Raindrop[] r = new Raindrop[500];
 Catcher catcher;
 int score;
 
 void setup() {
-  size(500, 700);
+  size(500, 500);
   for (int i = 0; i < r.length; i++) {
     r[i] = new Raindrop();
   } 
@@ -15,18 +18,22 @@ void draw() {
   textSize(50);
   fill(10);
   text(score, 10, 100);
-  for (int i = 0; i < r.length; i++) {
+  for (int i = 0; i < index; i++) {
     r[i].display();
     r[i].drop();
-    if (r[i].loc.y > height + r[i].d) {
-      r[i].reset();
-    }
     if (catcher.catchDrop(r[i]) == true) {
-      r[i].reset();
+      r[i].goAway();
       score++;
+      threshold-=10;
     }
   }
   catcher.display();
   catcher.update();
+  if (millis() - oldTime > threshold) {
+    if (index < r.length) {
+      index++;
+      oldTime = millis();
+    }
+  }
 }
 
