@@ -1,6 +1,6 @@
 int index = 1;
 int oldTime = 0;
-int threshold = 3000;
+int threshold = 1000;
 Raindrop[] r = new Raindrop[500];
 Catcher catcher;
 int score;
