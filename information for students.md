@@ -29,7 +29,7 @@ Due Dates and Other Information
 * Start and game over screens
 * Multiple lives or some other system of determining when the game ends that is more challenging than "as soon as something hits the bottom"
 * Visually, the game should be more interesting than the simple circles we started with
-* Include comments explainig how your code works
+* Include comments explaining how your code works
 
 **Documentation - 20 points**
 * Create a flowchart documenting how your game runs (15 points) - this flowchart needs to describe the process of the game, not the process by which you write the game.  Upload your flowchart as a .PDF file
