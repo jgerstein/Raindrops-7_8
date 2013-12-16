@@ -32,5 +32,5 @@ Due Dates and Other Information
 * Include comments explaining how your code works
 
 **Documentation - 20 points**
-* Create a flowchart documenting how your game runs (15 points) - this flowchart needs to describe the process of the game, not the process by which you write the game.  Upload your flowchart as a .PDF file
-* Describe your game with any information you think I should have in the README.  This includes any bugs/glitches you finid in your program.  It is better to describe them yourself than to leave them for me to find. (5 points)
+* Create a flowchart documenting how your game runs (15 points) - this flowchart needs to describe the process of the game, not the process by which you write or play the game.  Upload your flowchart as a .PDF file
+* Describe your game with any information you think I should have in the README.  This includes any bugs/glitches you find in your program.  It is better to describe them yourself than to leave them for me to find. (5 points)
